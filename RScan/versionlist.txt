@@ -1,0 +1,14 @@
+﻿Version Names
+
+Version Name		Version Number			Version Value		Release Date
+
+Blue Marble*	-	Version 0.5.0.0a		(Alpha 0.5a)		July 2014
+
+Black Titanium	-	Version 1.0.0.0a		(Alpha 1.0a)		August 2014
+Green Lead		-	Version 1.1.0.0a		(Alpha 1.1a)		(September 2014)
+Silver Copper	-	Version 1.2.0.0a		(Alpha 1.2a)		(November 2014)
+Aqua Mercury	-	Version 2.0.0.0a		(Alpha 2.0a)		(January 2015)
+Yellow Iron
+
+
+*Asterix Symbols current Version
