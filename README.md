@@ -18,8 +18,8 @@ General Usage Notes
 
 Documentation:
 -------
-http://phantomlabs.github.io/RegScan[br]
-http://github.com/PhantomLabs/RegScan/Wiki[br]
+http://phantomlabs.github.io/RegScan <br>
+http://github.com/PhantomLabs/RegScan/Wiki
 
 
 Installation
