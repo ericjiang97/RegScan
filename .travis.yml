@@ -1,0 +1,20 @@
+# Source language (using C since .NET and C# are not supported yet)
+language: c
+
+# Install dependencies needed to compile .NET and C#
+install: sudo apt-get install mono-devel mono-gmcs
+
+# Run the RegScan.sln file file
+script: RegScan.sln /p:Configuration=Release
+
+# Notification services
+notifications:
+  # Disable build status email notifications, until the issue with forks is fixed
+  email: false
+  webhooks: false
+
+# Environmental system variables
+env:
+  global:
+    # Make the log output cleaner
+    - TERM=dumb
