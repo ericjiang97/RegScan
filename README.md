@@ -1,4 +1,5 @@
 RegScan (v1.1a) Black Titanium
+[![Build Status](https://magnum.travis-ci.com/jia0020/RegScan.svg?token=jNcGbvhpzf7ShKf8jn8X)](https://magnum.travis-ci.com/jia0020/RegScan)
 ======= 
 A Registry Scanner
 
