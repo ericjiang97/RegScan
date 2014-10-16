@@ -13,8 +13,8 @@ General Usage Notes
 ```
     - HKEY_CURRENT_USER\\Software\\Policies\\Microsoft\\WindowsStore\\WindowsStore (INT)
     - HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\System\\DisableChangePassword (DWORD)
-- RegScan is also used to block changing of the Local Administrator (.\administrator) Password
 ```
+- RegScan is also used to block changing of the Local Administrator (.\administrator) Password
 
 Planned Features/Debugging (Notes for Developers)
 ------
