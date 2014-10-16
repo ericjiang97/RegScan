@@ -24,9 +24,10 @@ Planned Features/Debugging (Notes for Developers)
 
 Documentation/Bug Tracker:
 -------
-http://phantomlabs.github.io/RegScan <br>
-http://github.com/jia0020/RegScan/Wiki
-http://issue.phantomlabs.me/
+Core Site: http://jia0020.github.io/RegScan <br>
+PhantomLabs Site: http://phantomlabs.me <br>
+Wiki: http://github.com/jia0020/RegScan/Wiki <br>
+Bug Tracking Software: http://issue.phantomlabs.me/
 
 
 Installation
