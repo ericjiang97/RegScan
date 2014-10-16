@@ -1,6 +1,7 @@
 RegScan (Series 1.0.1)
 ======= 
-[![Build Status](https://magnum.travis-ci.com/jia0020/RegScan.svg?token=jNcGbvhpzf7ShKf8jn8X)](https://magnum.travis-ci.com/jia0020/RegScan)[![Build status](https://ci.appveyor.com/api/projects/status/iwvd7ke4vhqvanrd?svg=true)](https://ci.appveyor.com/project/jia0020/regscan)
+travis-ci Status: [![Build Status](https://magnum.travis-ci.com/jia0020/RegScan.svg?token=jNcGbvhpzf7ShKf8jn8X)](https://magnum.travis-ci.com/jia0020/RegScan)
+AppVeyor Status: [![Build status](https://ci.appveyor.com/api/projects/status/iwvd7ke4vhqvanrd?svg=true)](https://ci.appveyor.com/project/jia0020/regscan)
 
 Current Update Notes
 -------
