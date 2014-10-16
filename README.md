@@ -37,9 +37,3 @@ License
 -------
 This Program is licensed under the Apache Version 2.0 License. See LICENSE for more details.
 Also Protected with EULA license.
-
-
-
-
-
-
