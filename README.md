@@ -1,7 +1,7 @@
 RegScan (v1.1a) Black Titanium
 ======= 
 [![Build Status](https://magnum.travis-ci.com/jia0020/RegScan.svg?token=jNcGbvhpzf7ShKf8jn8X)](https://magnum.travis-ci.com/jia0020/RegScan)[![Build status](https://ci.appveyor.com/api/projects/status/grr0h9heoilu1ikt?svg=true)](https://ci.appveyor.com/project/jia0020/regscan)
-
+![RegScan](https://doc-0o-4o-docs.googleusercontent.com/docs/securesc/esjnr86pe72gmdtas92u5btmrtcmmch5/ams4dqf3tuvslq90nvave05ibcgodq81/1413417600000/16873500088946992875/16873500088946992875/0Bx2qC5WxhxsaYmJSdGxFUWZuS2M?h=16653014193614665626&e=download)
 A Registry Scanner
 
 Current Update Notes
