@@ -1,7 +1,6 @@
 RegScan (Series 1)
 ======= 
-[![Build Status](https://magnum.travis-ci.com/jia0020/RegScan.svg?token=jNcGbvhpzf7ShKf8jn8X)](https://magnum.travis-ci.com/jia0020/RegScan)[![Build status](https://ci.appveyor.com/api/projects/status/grr0h9heoilu1ikt?svg=true)](https://ci.appveyor.com/project/jia0020/regscan)
-
+[![Build Status](https://magnum.travis-ci.com/jia0020/RegScan.svg?token=jNcGbvhpzf7ShKf8jn8X)](https://magnum.travis-ci.com/jia0020/RegScan)[![Build status](https://ci.appveyor.com/api/projects/status/iwvd7ke4vhqvanrd?svg=true)](https://ci.appveyor.com/project/jia0020/regscan)
 Current Update Notes
 -------
 - RegScan scans in WindowsStore
