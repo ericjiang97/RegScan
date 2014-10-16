@@ -22,10 +22,11 @@ Planned Features/Debugging (Notes for Developers)
 - need to find a way to block Administrator Password, registry?
 - license Registry Status
 
-Documentation:
+Documentation/Bug Tracker:
 -------
 http://phantomlabs.github.io/RegScan <br>
-http://github.com/PhantomLabs/RegScan/Wiki
+http://github.com/jia0020/RegScan/Wiki
+http://issue.phantomlabs.me/
 
 
 Installation
