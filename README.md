@@ -1,4 +1,4 @@
-RegScan (Series 1)
+RegScan (Series 1.0.1)
 ======= 
 [![Build Status](https://magnum.travis-ci.com/jia0020/RegScan.svg?token=jNcGbvhpzf7ShKf8jn8X)](https://magnum.travis-ci.com/jia0020/RegScan)[![Build status](https://ci.appveyor.com/api/projects/status/grr0h9heoilu1ikt?svg=true)](https://ci.appveyor.com/project/jia0020/regscan)
 
