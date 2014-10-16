@@ -16,7 +16,6 @@ branches:
   # whitelist
   only:
     - master
-    - production
 
   # blacklist
   except:
@@ -24,11 +23,6 @@ branches:
 
 # Do not build on tags (GitHub only)
 skip_tags: true
-
-# Skipping commits with particular message or from user
-skip_commits:
-  message: /Created.*\.(png|jpg|jpeg|bmp|gif)/       # Regex for matching commit message
-  author: John        # Commit author's username, name, email or regexp maching one of these.
 
 #---------------------------------#
 #    environment configuration    #
@@ -40,23 +34,6 @@ os: Windows Server 2012
 # scripts that are called at very beginning, before repo cloning
 init:
   - git config --global core.autocrlf input
-
-# clone directory
-clone_folder: c:\projects\myproject
-
-# environment:
-#  global:
-#    connection_string: server=12;password=13;
-#    service_url: https://127.0.0.1:8090
-#
-#  matrix:
-#  - db: mysql
-#    provider: mysql
-#
-#  - db: mssql
-#    provider: mssql
-#    password:
-#      secure: $#(JFDA)jQ@#$
 
 # this is how to allow failing jobs in the matrix
 matrix:
