@@ -2,7 +2,7 @@ RegScan (Series 1.0.1)
 ======= 
 AppVeyor Status: [![Build status](https://ci.appveyor.com/api/projects/status/iwvd7ke4vhqvanrd?svg=true)](https://ci.appveyor.com/project/jia0020/regscan)
 
-RegScan Site: http://jia0020.github.io/RegScan/ - Note this site is moving to phantomlabs.me
+RegScan Site: http://jia0020.github.io/RegScan/ <br>
 Issues: http://issue.phantomlabs.me/
 
 Current Update Notes
