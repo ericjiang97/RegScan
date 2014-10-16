@@ -1,72 +1,123 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
+
   <head>
-    <meta charset="utf-8">
+    <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Regscan by jia0020</title>
+    <meta name="description" content="Regscan : A Registry Scanner">
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <script src="javascripts/scale.fix.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Regscan</title>
   </head>
+
   <body>
-    <div class="wrapper">
-      <header>
-        <h1 class="header">Regscan</h1>
-        <p class="header">A Registry Scanner</p>
 
-        <ul>
-          <li class="download"><a class="buttons" href="https://github.com/jia0020/RegScan/zipball/master">Download ZIP</a></li>
-          <li class="download"><a class="buttons" href="https://github.com/jia0020/RegScan/tarball/master">Download TAR</a></li>
-          <li><a class="buttons github" href="https://github.com/jia0020/RegScan">View On GitHub</a></li>
-        </ul>
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/jia0020/RegScan">View on GitHub</a>
 
-        <p class="header">This project is maintained by <a class="header name" href="https://github.com/jia0020">jia0020</a></p>
+          <h1 id="project_title">Regscan</h1>
+          <h2 id="project_tagline">A Registry Scanner</h2>
 
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/jia0020/RegScan/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/jia0020/RegScan/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
 
-      </header>
-      <section>
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a name="regscan-series-101" class="anchor" href="#regscan-series-101"><span class="octicon octicon-link"></span></a>RegScan (Series 1.0.1)</h1>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+<h2>
+<a name="a-registry-scanner-by-jia0020---copyright-owned-by-phantomlabs" class="anchor" href="#a-registry-scanner-by-jia0020---copyright-owned-by-phantomlabs"><span class="octicon octicon-link"></span></a>A Registry Scanner by JIA0020 - Copyright Owned by PhantomLabs</h2>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
+<hr>
+
+<p>AppVeyor Status: <a href="https://ci.appveyor.com/project/jia0020/regscan"><img src="https://ci.appveyor.com/api/projects/status/iwvd7ke4vhqvanrd?svg=true" alt="Build status"></a></p>
+
+<p>RegScan Site: <a href="http://jia0020.github.io/RegScan/">http://jia0020.github.io/RegScan/</a> <br>
+Issues: <a href="http://issue.phantomlabs.me/">http://issue.phantomlabs.me/</a></p>
+
+<h2>
+<a name="current-update-notes" class="anchor" href="#current-update-notes"><span class="octicon octicon-link"></span></a>Current Update Notes</h2>
+
+<hr>
+
+<ul>
+<li>RegScan scans in WindowsStore</li>
+<li>Runs with Administrative Privallages (HighestPossible)</li>
+</ul>
+
+<h2>
+<a name="general-usage-notes" class="anchor" href="#general-usage-notes"><span class="octicon octicon-link"></span></a>General Usage Notes</h2>
+
+<hr>
+
+<ul>
+<li>RegScan is to be used as a background program. Scanning for changes in the Registry (regedit.exe) on targeted registry keys. It scans the following keys:</li>
+</ul>
+
+<pre><code>    - HKEY_CURRENT_USER\\Software\\Policies\\Microsoft\\WindowsStore\\WindowsStore (INT)
+    - HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\System\\DisableChangePassword (DWORD)
 </code></pre>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+<ul>
+<li>RegScan is also used to block changing of the Local Administrator (.\administrator) Password</li>
+</ul>
 
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+<h2>
+<a name="planned-featuresdebugging-notes-for-developers" class="anchor" href="#planned-featuresdebugging-notes-for-developers"><span class="octicon octicon-link"></span></a>Planned Features/Debugging (Notes for Developers)</h2>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+<hr>
 
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
+<ul>
+<li>latest version is unstable (redeveloping core)</li>
+<li>need to find a way to block Administrator Password, registry?</li>
+<li>license Registry Status</li>
+</ul>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+<h2>
+<a name="documentationbug-tracker" class="anchor" href="#documentationbug-tracker"><span class="octicon octicon-link"></span></a>Documentation/Bug Tracker:</h2>
 
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+<hr>
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+<p>Core Site: <a href="http://jia0020.github.io/RegScan">http://jia0020.github.io/RegScan</a> <br>
+PhantomLabs Site: <a href="http://phantomlabs.me">http://phantomlabs.me</a> <br>
+Wiki: <a href="http://github.com/jia0020/RegScan/Wiki">http://github.com/jia0020/RegScan/Wiki</a> <br></p>
 
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+<h2>
+<a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation</h2>
 
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
+<hr>
+
+<ul>
+<li>install with Source</li>
+<li>Install with commerical *.exe (downloadable within next update)</li>
+</ul>
+
+<h2>
+<a name="license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>License</h2>
+
+<p>This Program is licensed under the Apache Version 2.0 License. See LICENSE for more details.
+Also licensed under an EULA license.</p>
       </section>
-      <footer>
-        <p><small>Hosted on <a href="http://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Regscan maintained by <a href="https://github.com/jia0020">jia0020</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
       </footer>
     </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-		
+
+    
+
   </body>
 </html>
