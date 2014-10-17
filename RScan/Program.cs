@@ -29,7 +29,7 @@ namespace RScan
         {
             #region RScan_licensestatus
             int licensestatus = 0; //0 - DefaultValue (Unactivated)
-            
+
             /*
              * If RegistryKey = 1, then is activated.
              * Planned Registry Path: Software\\PhantomLabs\\RegScan
@@ -52,7 +52,7 @@ namespace RScan
                 const string winstorekeyname = "HKEY_CURRENT_USER\\Software\\Policies\\Microsoft\\WindowsStore";
                 object keyvalue = winstorekey.GetValue("WindowsStore");
                 int keyvalueint = Convert.ToInt32(keyvalue);
-                if (keyvalueint == 0) 
+                if (keyvalueint == 0)
                 {
                     Object o = winstorekey.GetValue("RemoveWindowsStore");
                     //WindowsStore Unblocked
@@ -60,22 +60,23 @@ namespace RScan
                     {
                         //RemoveWindowsStore is '0'. Reset value to 1
                         Registry.SetValue(winstorekeyname, "RemoveWindowsStore", "1", RegistryValueKind.DWord);
-                        winstorekey.SetValue("RemoveWindowsStore","1");
+                        winstorekey.SetValue("RemoveWindowsStore", "1");
                         //Remove(?): key.SetValue("RemoveWindowsStore", "1", RegistryValueKind.String);
                         MessageBox.Show("WindowsStore from 0 to 1 Successful", pname, MessageBoxButtons.OK, MessageBoxIcon.Information);
                         Object reg = winstorekey.GetValue("RemoveWindowsStore");
                         MessageBox.Show(winstorekeyname + " Value = " + keyvalueint, pname, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }//try_if
 
-                    catch
+                    catch (Exception ex)
                     {
-                            MessageBox.Show("WindowsStore Value: " + keyvalueint + ". An Error Has Occured - Failed to write Registry Entry", "RSCan");
+                        MessageBox.Show(ex.Message, "RegScan");
                     }//catch_if
                 }
 
             }
-            catch
+            catch (Exception ex)
             {
+                MessageBox.Show(ex.Message, "RegScan");
                 //ignore
             }
 
@@ -94,7 +95,7 @@ namespace RScan
                 int keyvalueint = Convert.ToInt32(keyvalue);
                 if (keyvalueint == 0)
                 {
-                    
+
                 }
             }
             catch (Exception)
