@@ -48,7 +48,7 @@ namespace RScan
             try
             {
                 //HKEY_CURRENT_USER\Software\Policies\Microsoft\WindowsStore
-                RegistryKey winstorekey = Registry.LocalMachine.OpenSubKey("Software\\Policies\\Microsoft\\WindowsStore");
+                RegistryKey winstorekey = Registry.CurrentUser.OpenSubKey("Software\\Policies\\Microsoft\\WindowsStore", true);
                 const string winstorekeyname = "HKEY_CURRENT_USER\\Software\\Policies\\Microsoft\\WindowsStore";
                 object keyvalue = winstorekey.GetValue("WindowsStore");
                 int keyvalueint = Convert.ToInt32(keyvalue);
