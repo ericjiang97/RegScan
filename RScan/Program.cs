@@ -68,7 +68,6 @@ namespace RScan
             if (!keyName.StartsWith("HKEY_CURRENT_USER\\") && !keyName.StartsWith("HKEY_LOCAL_MACHINE\\"))
             {
                 throw new ArgumentException("Key path argument did not start with a registry hive name.", "keypath");
-                return RScanReturnStatus.UnknownError;
             }
 
             string keypathstripped = keyName.Replace("HKEY_CURRENT_USER\\", "")
