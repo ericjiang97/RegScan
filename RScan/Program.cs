@@ -50,7 +50,7 @@ namespace RScan
                 //HKEY_CURRENT_USER\Software\Policies\Microsoft\WindowsStore
                 RegistryKey winstorekey = Registry.CurrentUser.OpenSubKey("Software\\Policies\\Microsoft\\WindowsStore", true);
                 const string winstorekeyname = "HKEY_CURRENT_USER\\Software\\Policies\\Microsoft\\WindowsStore";
-                object keyvalue = winstorekey.GetValue("WindowsStore");
+                object keyvalue = winstorekey.GetValue("RemoveWindowsStore");
                 int keyvalueint = Convert.ToInt32(keyvalue);
                 if (keyvalueint == 0)
                 {
