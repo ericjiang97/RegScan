@@ -24,6 +24,7 @@ namespace RScan
     internal static class Program
     {
         public static string pname = "RegScan";
+        private enum RScanReturnStatus { NoActionRequired, KeyDiffersWasFixed, KeyDiffersWriteError, KeyDiffersReadError, KeyDiffersUnknownError, UnknownError};
 
         private static void Main(string[] args)
         {
@@ -44,41 +45,7 @@ namespace RScan
              * Original Program by Eric Jiang
              * Version 1.0.1a edited by Evan Petousis
              */
-
-            try
-            {
-                //HKEY_CURRENT_USER\Software\Policies\Microsoft\WindowsStore
-                RegistryKey winstorekey = Registry.LocalMachine.OpenSubKey("Software\\Policies\\Microsoft\\WindowsStore");
-                const string winstorekeyname = "HKEY_CURRENT_USER\\Software\\Policies\\Microsoft\\WindowsStore";
-                object keyvalue = winstorekey.GetValue("WindowsStore");
-                int keyvalueint = Convert.ToInt32(keyvalue);
-                if (keyvalueint == 0)
-                {
-                    Object o = winstorekey.GetValue("RemoveWindowsStore");
-                    //WindowsStore Unblocked
-                    try
-                    {
-                        //RemoveWindowsStore is '0'. Reset value to 1
-                        Registry.SetValue(winstorekeyname, "RemoveWindowsStore", "1", RegistryValueKind.DWord);
-                        winstorekey.SetValue("RemoveWindowsStore", "1");
-                        //Remove(?): key.SetValue("RemoveWindowsStore", "1", RegistryValueKind.String);
-                        MessageBox.Show("WindowsStore from 0 to 1 Successful", pname, MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        Object reg = winstorekey.GetValue("RemoveWindowsStore");
-                        MessageBox.Show(winstorekeyname + " Value = " + keyvalueint, pname, MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    }//try_if
-
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show(ex.Message, "RegScan");
-                    }//catch_if
-                }
-
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message, "RegScan");
-                //ignore
-            }
+            WriteRegistryKey("HKEY_CURRENT_USER\\Software\\Policies\\Microsoft\\WindowsStore", "RemoveWindowsStore", "1", RegistryValueKind.DWord);
 
             #endregion
 
@@ -87,27 +54,44 @@ namespace RScan
              * DisableChangePassword
              * Group Block Version: 0.1a
              */
-            try
-            {
-                RegistryKey dcpKey = Registry.LocalMachine.OpenSubKey("Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\System");
-                const string dcpkeyname = "HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\System";
-                object keyvalue = dcpKey.GetValue("DisableChangePassword");
-                int keyvalueint = Convert.ToInt32(keyvalue);
-                if (keyvalueint == 0)
-                {
-
-                }
-            }
-            catch (Exception)
-            {
-                throw;
-            }
+            WriteRegistryKey("HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\System", "DisableChangePassword", "1", RegistryValueKind.DWord);
 
             #endregion
 
             #region adminblock
 
             #endregion
+        }
+
+        private static RScanReturnStatus WriteRegistryKey(string keyName, string valueName, object value, RegistryValueKind kind)
+        {
+            if (!keyName.StartsWith("HKEY_CURRENT_USER\\") && !keyName.StartsWith("HKEY_LOCAL_MACHINE\\"))
+            {
+                throw new ArgumentException("Key path argument did not start with a registry hive name.", "keypath");
+            }
+
+            string keypathstripped = keyName.Replace("HKEY_CURRENT_USER\\", "")
+                                            .Replace("HKEY_LOCAL_MACHINE\\", "");
+            RegistryKey winstorekey = Registry.CurrentUser.OpenSubKey(keypathstripped, true);
+            object keyvalue = winstorekey.GetValue(valueName);
+            string keyvaluestr = Convert.ToString(keyvalue);
+            if (!keyvaluestr.Equals(value))
+            {
+                try
+                {
+                    Registry.SetValue(keyName, valueName, value, kind);
+                    MessageBox.Show(valueName + " from "+keyvaluestr+" to "+value+" Successful", pname, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show(keyName + " "+valueName+" = " + value, pname, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }//try_if
+
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message, "RegScan");
+                    return RScanReturnStatus.UnknownError;
+                }//catch_if
+            }
+            winstorekey.Close();
+            return RScanReturnStatus.NoActionRequired;
         }
     }
 }
