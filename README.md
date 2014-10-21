@@ -48,12 +48,13 @@ Also Protected with EULA license.
 Future Versions
 ------
 
-| Version Code          | Version Number | Dev Version  | Release Date | Origin Of Version Code                    |
-|-----------------------|----------------|--------------|--------------|-------------------------------------------|
-| Black Titanium        | 1.0.0.(build)  | (Alpha 1.0a) | August '14   | Element                                   |
-| Black Splendens*      | 1.0.1.(build)  | (Alpha 1.1a) | Oct/Nov '14  | Betta splendens (Siamese Fighting Fish)   |
-| Brown Porosus         | 1.1.0.(build)  | (Alpha 2.0a) | January '15  | Crocodylus porosus (Saltwater Croc)       |
-| Silver Mento          | 1.1.1.(build)  | (Alpha 2.1a) | Mar/Jun '15  | Catoprion mento (Wimple Pirnha)           |
-| Orange Architeuthis   | 1.2.0.(build)  | (Alpha 3.0b) | August '15   | Architeuthidae Architeuthis (Giant Squid) |
+| Version Code            | Version Number | Dev Version  | Release Date | Origin Of Version Code                    |
+|-------------------------|----------------|--------------|--------------|-------------------------------------------|
+| Black Titanium          | 1.0.0.(build)  | (Alpha 1.0a) | August '14   | Element                                   |
+| Black Splendens*        | 1.0.1.(build)  | (Alpha 1.1a) | Oct/Nov '14  | Betta splendens (Siamese Fighting Fish)   |
+| Brown Porosus           | 1.1.0.(build)  | (Alpha 2.0a) | January '15  | Crocodylus porosus (Saltwater Croc)       |
+| Silver Mento            | 1.1.1.(build)  | (Alpha 2.1a) | Mar/Jun '15  | Catoprion mento (Wimple Pirnha)           |
+| Orange Architeuthis     | 1.2.0.(build)  | (Alpha 3.0b) | August '15   | Architeuthidae Architeuthis (Giant Squid) |
+| Tangerine Tyrannosaurus | 2.0.1.(build)  | (Beta 1.0a)  | ~January '16 | Tyrannosaurini Tyrannosaurus rex (T-rex)  |
 
 *Indicates Current Version
