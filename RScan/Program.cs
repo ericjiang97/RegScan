@@ -1,12 +1,13 @@
 ﻿#region RScan Details
 /*
- * RScan By PhantomLabs
- * Source Code: Version 1.0a (Alpha 1) - Black Titanium
- * License-Type: Open-Source (CODE ONLY) | Commercial License (PROGRAM)
- * Customisable - Request Features via Email.
+ * RScan By PhantomLabs (RegScan)
+ * Source Code: Version 1.0.1.(build) - Series 1.0.1
+ * License-Type: Open-Source - Apache (CODE ONLY) | Commercial License (PROGRAM)
+ * Customisable - Request Features via Email. (Commercial License ONLY)
+ * Support Email: mailto:support@phantomlabs.me
+ * Issues: http://issue.phantomlabs.me
  * 
- * By Eric Jiang
- * Editors: Evan Petousis, Eric Jiang
+ * Developers: Evan Petousis, Eric Jiang
  */
 #endregion
 
@@ -30,7 +31,6 @@ namespace RScan
         {
             #region RScan_licensestatus
             int licensestatus = 0; //0 - DefaultValue (Unactivated)
-
             /*
              * If RegistryKey = 1, then is activated.
              * Planned Registry Path: Software\\PhantomLabs\\RegScan
@@ -58,11 +58,25 @@ namespace RScan
 
             #endregion
 
-            #region adminblock
+            #region gpupdate handler
+            try
+            {
+                string strCmdText;
+                strCmdText = "/C gpupdate.exe /force";
+                System.Diagnostics.Process.Start("CMD.exe", strCmdText);
+            }
+            catch(Exception ex1)
+            {
+                MessageBox.Show(ex1.Message, "RegScan");
+            }
+            #endregion
+
+            #region checkinternetconnection
 
             #endregion
         }
 
+        #region Script-WriteRegistryKey
         private static RScanReturnStatus WriteRegistryKey(string keyName, string valueName, object value, RegistryValueKind kind)
         {
             if (!keyName.StartsWith("HKEY_CURRENT_USER\\") && !keyName.StartsWith("HKEY_LOCAL_MACHINE\\"))
@@ -93,5 +107,6 @@ namespace RScan
             winstorekey.Close();
             return RScanReturnStatus.NoActionRequired;
         }
+        #endregion
     }
 }

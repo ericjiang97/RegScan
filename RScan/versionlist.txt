@@ -1,14 +1,10 @@
-﻿Version Names
+﻿Version Code			Version Number		Dev Version		Release Date		Origin Of Version Code
 
-Version Name		Version Number			Version Value		Release Date
-
-Blue Marble*	-	Version 0.5.0.0a		(Alpha 0.5a)		July 2014
-
-Black Titanium	-	Version 1.0.0.0a		(Alpha 1.0a)		August 2014
-Green Lead		-	Version 1.1.0.0a		(Alpha 1.1a)		(September 2014)
-Silver Copper	-	Version 1.2.0.0a		(Alpha 1.2a)		(November 2014)
-Aqua Mercury	-	Version 2.0.0.0a		(Alpha 2.0a)		(January 2015)
-Yellow Iron
-
+Black Titanium			1.0.0.(build)		(Alpha 1.0a)	August '14			Element
+Black Splendens*		1.0.1.(build)		(Alpha 1.1a)	Oct/Nov '14			Betta splendens (Siamese Fighting Fish)
+Brown Porosus			1.1.0.(build)		(Alpha 2.0a)	January '15			Crocodylus porosus (Saltwater Croc)
+Silver Mento			1.1.1.(build)		(Alpha 2.1a)	Mar/Jun '15			Catoprion mento (Wimple Pirnha)
+Orange Architeuthis		1.2.0.(build)		(Alpha 3.0b)	August '15			Architeuthidae Architeuthis (Giant Squid)
+Tangerine Tyrannosaurus	2.0.1.(build)		(Beta 1.0a)		~January '16		Tyrannosaurini Tyrannosaurus rex (T-rex)
 
 *Asterix Symbols current Version
