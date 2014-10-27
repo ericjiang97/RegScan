@@ -13,8 +13,8 @@ AppVeyor Status: [![Build status](https://ci.appveyor.com/api/projects/status/iw
 
 Current Update Notes
 -------
-- RegScan scans in WindowsStore
-- RegScan scans in DisableChangePassword
+- RegScan scans and replaces value (If Changed) in //WindowsStore
+- RegScan scans and replaces value (If Changed) in //DisableChangePassword
 - Grabs latest policy (GPUpdate)
 - Runs with Administrative Privallages (HighestPossible)
 
@@ -48,11 +48,12 @@ Also Protected with EULA license.
 Future Versions
 ------
 
-| Version Code     | Version Number | Dev Version  | Release Date | Origin Of Version Code                  |
-|------------------|----------------|--------------|--------------|-----------------------------------------|
-| Black Titanium   | 1.0.0.(build)  | (Alpha 1.0a) | August '14   | Element                                 |
-| Black Splendens* | 1.0.1.(build)  | (Alpha 1.1a) | Oct/Nov '14  | Betta splendens (Siamese Fighting Fish) |
-| Brown Porosus    | 1.1.0.(build)  | (Alpha 2.0a) | January '15  | Crocodylus porosus (Saltwater Croc)     |
-| Silver Mento     | 1.1.1.(build)  | (Alpha 2.1a) | Mar/Jun '15  | Catoprion mento (Wimple Pirnha)         |
+| Version Code          | Version Number | Dev Version  | Release Date | Origin Of Version Code                    |
+|-----------------------|----------------|--------------|--------------|-------------------------------------------|
+| Black Titanium        | 1.0.0.(build)  | (Alpha 1.0a) | August '14   | Element                                   |
+| Black Splendens*      | 1.0.1.(build)  | (Alpha 1.1a) | Oct/Nov '14  | Betta splendens (Siamese Fighting Fish)   |
+| Brown Porosus         | 1.1.0.(build)  | (Alpha 2.0a) | January '15  | Crocodylus porosus (Saltwater Croc)       |
+| Silver Mento          | 1.1.1.(build)  | (Alpha 2.1a) | Mar/Jun '15  | Catoprion mento (Wimple Pirnha)           |
+| Orange Architeuthis   | 1.2.0.(build)  | (Alpha 3.0b) | August '15   | Architeuthidae Architeuthis (Giant Squid) |
 
 *Indicates Current Version
