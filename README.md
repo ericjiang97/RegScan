@@ -2,6 +2,8 @@ RegScan (Series 1.0.1) - Black Splendens
 ======= 
 A Registry Scanner by PhantomLabs
 
+Builds also building via Visual Studio Online
+
 RegScan Site: http://jia0020.github.io/RegScan/ <br>
 Issues: http://issue.phantomlabs.me/ <br>
 Wiki: http://github.com/jia0020/RegScan/wiki | Note: This will be moved to a new site
@@ -9,6 +11,7 @@ Wiki: http://github.com/jia0020/RegScan/wiki | Note: This will be moved to a new
 Builds
 -------
 AppVeyor Status: [![Build status](https://ci.appveyor.com/api/projects/status/iwvd7ke4vhqvanrd?svg=true)](https://ci.appveyor.com/project/jia0020/regscan)
+
 
 
 Current Update Notes
