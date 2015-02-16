@@ -2,7 +2,9 @@ RegScan (Series 1.0.1) - Black Splendens
 ======= 
 A Registry Scanner by PhantomLabs
 
-Builds also building via Visual Studio Online
+RegSCAN has BEEN <B>OPEN-SOURCED</B>
+
+Builds also building via Visual Studio Online.
 
 RegScan Site: http://jia0020.github.io/RegScan/ <br>
 Issues: http://issue.phantomlabs.me/ <br>
