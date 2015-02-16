@@ -1,4 +1,4 @@
-RegScan (Series 1.0.1) - Black Splendens
+RegScan (v1.1-OPEN) - THIS PROGRAM HAS BEEN SUSPENDED AND IS OPEN-SOURCED
 ======= 
 A Registry Scanner by PhantomLabs
 
